@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="./Top Grossing Movies February 2020_files/modernizr.js.download"</script>
+</head>
+
+<body cz-shortcut-listen="true">
+<div class="contain-to-grid sticky">
+<nav class="top-bar" data-topbar="" data-options="sticky_on: large">
+<ul class="title-area">
+<li class="name">  
+<h1 align="left">
+<a href="https://turing.cs.olemiss.edu/~kdavidso/">Dr. Davidson's turing
+</a>
+</h1>
+</li>
+</ul>
+</nav></div>

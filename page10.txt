@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Top Grossing Movies February 2020</title>  
+<link rel="stylesheet" href="./Top Grossing Movies February 2020_files/normalize.css">
+<link rel="stylesheet" href="./Top Grossing Movies February 2020_files/foundation.css">
+
+<script src="./Top Grossing Movies February 2020_files/modernizr.js.download">
+</script>
+</head>
+<body cz-shortcut-listen="true">
+<div class="contain-to-grid sticky">
+<nav class="top-bar" data-topbar="" data-options="sticky_on: large">
+<ul class="title-area">
+<li class="name">  
+<h1 align="left">
+<a href="https://turing.cs.olemiss.edu/~kdavidso/">Top Grossing Movies February 2020
+</a>
+</h1>
+</li>
+</ul>
+</nav>
+</div>Successful Connection
+<div class="row">
+<div data-alert="" class="alert-box info round">You must login in first!
+</div>
+</div>
+<div class="row">
+<label for="left-label" class="left inline">
+<h3>Welcome!
+</h3>
+<form action="https://turing.cs.olemiss.edu/~kdavidso/PHP/CRUD/indexS21.php" method="post">
+<p>Username:
+<input type="text" name="username">
+</p>
+<p>Password:
+<input type="password" name="password" value="">
+</p>
+<input type="submit" name="submit" value="Login" class="tiny round button">
+</form>
+</label>
+</div>
+<br>
+<br>
+<br>
+<h4>
+<div class="text-center">
+<small>Copyright Jul 2022, February 2020 Movies
+</small>
+</div>
+</h4>
+</body
+</html>
