@@ -43,8 +43,8 @@ public class HTMLValidator {
             validTags.add(file.next());
         }
         Scanner file2 = new Scanner(new File(voidHTML));
-        while(file.hasNext()){
-            voidTags.add(file.next());
+        while(file2.hasNext()){
+            voidTags.add(file2.next());
         }
 
     }
@@ -169,6 +169,8 @@ public class HTMLValidator {
         String oneLine = "", tag = "";
         int space, closeTag;
         Scanner file = new Scanner(new File(filename));
+
+
 
         //TODO: Step through file determining whether or not tags are valid or invalid
         // When you encounter and open bracket < throw and InvalidHTMLException if there is no closing bracket >
