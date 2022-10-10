@@ -8,7 +8,7 @@ class HTMLValidatorTest_Students {
     @Test
     public void testValidTag2() throws FileNotFoundException {
         HTMLValidator evaluator = new HTMLValidator("page1.txt", "validTags.txt", "voidTags.txt");
-        assertFalse(evaluator.validTag("<div"));
+        assertFalse(evaluator.validTag("</div"));
     }
 
     @Test

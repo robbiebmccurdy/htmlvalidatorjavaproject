@@ -33,10 +33,12 @@ public class HTMLValidator {
         //TODO: Instantiate Stacks and ArrayLists.
         // Assign filename to filename instance variable. The filename is used in validateTags and validateHTML methods.
         // Populate ArrayLists with valid and void html5 tags.
-        filename = this.filename;
+        String fn = filename;
         Scanner file = new Scanner(new File(validHTML));
         validTags = new ArrayList<String>();
         voidTags = new ArrayList<String>();
+        openTags = new Stack<String>();
+        closeTags = new Stack<String>();
         while(file.hasNext()){
             validTags.add(file.next());
         }
@@ -121,7 +123,9 @@ public class HTMLValidator {
             vta.add(file.next());
         }
 
-        if(vta.contains(tag)){
+        String tag2 = tag.replace("/", "");
+
+        if(vta.contains(tag2)){
             return true;
         }
 
@@ -144,7 +148,9 @@ public class HTMLValidator {
             vota.add(file.next());
         }
 
-        if(vota.contains(tag)){
+        String tag2 = tag.replace("/", "");
+
+        if(vota.contains(tag2)){
             return true;
         }
 
@@ -159,7 +165,7 @@ public class HTMLValidator {
      * @return
      * @throws FileNotFoundException
      */
-    public boolean validateTags() throws FileNotFoundException{
+    public boolean validateTags() throws FileNotFoundException {
         String oneLine = "", tag = "";
         int space, closeTag;
         Scanner file = new Scanner(new File(filename));
@@ -174,15 +180,25 @@ public class HTMLValidator {
         // If all tags are in the validTags ArrayList, return true
 
         while(file.hasNext()){
-            if(file.next().contains("<") && !file.next().contains("!")){
-                if(!file.next().contains(">")) {
+            tag = file.next();
+            oneLine = file.nextLine();
+            if(!tag.contains("<!")) {
+                if (tag.contains("</")) {
+                    if (validTag(tag) == true || voidTag(tag) == true) {
+                        closeTags.push(tag);
+                    } else {
+                        return false;
+                    }
+                }
+                if(!oneLine.contains(">")){
                     throw new InvalidHTMLException();
                 }
-                if(file.next().contains("/")){
-                    closeTags.push(file.next());
-                }
-                oneLine = file.nextLine();
 
+                if(validTag(tag) == true || voidTag(tag) == true) {
+                    openTags.push(tag);
+                } else {
+                    return false;
+                }
             }
         }
 
