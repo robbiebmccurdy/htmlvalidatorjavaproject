@@ -14,6 +14,7 @@ public class HTMLValidatorDriver {
         System.out.println("Size of open tags is " + page.getSizeOpenTags() + "\nSize of close tags is " + page.getSizeCloseTags());
         System.out.println("\n--------------\nOpen Tags\n" + page.printOpenTags());
         System.out.println("\n--------------\nClose Tags\n" + page.printCloseTags());
+        System.out.println();
 
         if(page.validateHTML())
             System.out.println(("Validated HTML"));
